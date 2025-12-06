@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Prueba trimestral Carlos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="formulario">
+
+        <form id="miFormulario">
+            <h2>Datos</h2>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" placeholder="Edad">
+
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" placeholder="alguien@gmail.com">
+
+            <input type="button" id="nuevocampo" value="Añadir campo" onclick="campoNuevo()">
+            <input type="button" value="Eliminar campo" onclick="eliminarCampo()">
+
+            <input type="button" value="Enviar" onclick="Enviar()">
+
+        </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

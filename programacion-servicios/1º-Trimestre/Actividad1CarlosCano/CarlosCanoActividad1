@@ -1,0 +1,20 @@
+CalculadoraPuntuacion
+De las lineas 5 a la 18 lo que esta haciendo en controlar que no se introduzca un dato que no sea un entero 
+y en el caso que lo sacara por pantalla un mensajero de error
+De la linea 19 a la 23 esta comprobando que todos los datos sean mayores que cero es decir que no sean negativos
+La linea 24 y 25 estan guardando el resultado de la formula en una variable e imprimiendola por consola
+
+LanzadorPuntuacionPaso2
+De la linea 8 a la 14 se estan introduciendo por teclado las variable eliminado con el trim los espacios por los lados
+De la linea 16 a la 18 no entiendo muy bien lo que esta haciendo
+De las linea 20 a la 27 se esta inicializando la instancia de la clase ProcessBuilder pb = new ProcessBuilder
+De la linea 29 a la 34 esta leyendo el proceso de la clase CalculadoraPuntuacion y mostrandolo linea por linea
+De la linea 36 a la 45 espera a que el proceso termine y mostrando en su caso los mensajes de error
+
+LanzadorPuntuacionPaso3
+De la linea 8 a la 20 se esa inicilizanod el fichero y comprobando que existe 
+De la 23 a la 25 no entiendo muy bien lo que hace
+De la 35 a la 51 se lanzando el proceso y va mostrando linea a linea el proceso 
+
+LanzadorPuntuacionPaso4
+Es igual a la anterior pero cambia la linea de la 35 a la 35 si el comando se ejecuta correctamente, su resultado se guarda en salida.txt. y si hay errores (por ejemplo, el directorio no existe), se guardan en errores.log.

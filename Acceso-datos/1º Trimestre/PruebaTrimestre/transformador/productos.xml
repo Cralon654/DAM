@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<productos>
+    <producto>
+        <id>1</id>
+        <nombre>zapato</nombre>
+        <precio>50.0</precio>
+        <categoria>ropa</categoria>
+    </producto>
+    <producto>
+        <id>2</id>
+        <nombre>balon</nombre>
+        <precio>50.0</precio>
+        <categoria>deporte</categoria>
+    </producto>
+    <producto>
+        <id>3</id>
+        <nombre>movil</nombre>
+        <precio>50.0</precio>
+        <categoria>telefonia</categoria>
+    </producto>
+    <producto>
+        <id>4</id>
+        <nombre>martillo</nombre>
+        <precio>50.0</precio>
+        <categoria>herramienta</categoria>
+    </producto>
+    <producto>
+        <id>5</id>
+        <nombre>camiseta</nombre>
+        <precio>50.0</precio>
+        <categoria>ropa</categoria>
+    </producto>
+</productos>
