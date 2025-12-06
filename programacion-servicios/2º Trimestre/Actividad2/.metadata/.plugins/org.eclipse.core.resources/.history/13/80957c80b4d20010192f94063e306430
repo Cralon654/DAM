@@ -1,0 +1,40 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Cliente {
+
+    public static void main(String[] args) {
+        String host = "localhost";
+        int puerto = 666;
+        Scanner scanner = new Scanner(System.in);
+
+        int opcion = scanner.nextInt();
+
+        try {
+            // Conectar al servidor
+            Socket socket = new Socket(host, puerto);
+
+            // Crear flujos
+            DataOutputStream salida = new DataOutputStream(socket.getOutputStream());
+            DataInputStream entrada = new DataInputStream(socket.getInputStream());
+
+            // 1. Enviar opción al servidor
+            salida.writeInt(opcion);
+
+            // 2. Recibir respuesta del servidor
+            String respuesta = entrada.readUTF();
+
+            // 3. Mostrar respuesta
+            System.out.println("SERVIDOR: " + respuesta);
+
+            // Cerrar recursos
+            socket.close();
+
+        } catch (IOException e) {
+            System.err.println("Error al conectar con el servidor: " + e.getMessage());
+        }
+    }
+}
